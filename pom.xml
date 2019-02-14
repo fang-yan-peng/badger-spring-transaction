@@ -7,9 +7,10 @@
 
     <groupId>org.jfaster</groupId>
     <artifactId>badger-spring-transaction</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>badger-spring-transaction</name>
+    <description>badger support for spring transaction manager</description>
     <url>https://github.com/fang-yan-peng/badger-spring-transaction</url>
 
     <licenses>
@@ -56,7 +57,7 @@
         <dependency>
             <groupId>org.jfaster</groupId>
             <artifactId>badger</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
 
         <!--Spring-->
@@ -97,6 +98,9 @@
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
+                                <configuration>
+                                    <additionalparam>-Xdoclint:-missing</additionalparam>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
